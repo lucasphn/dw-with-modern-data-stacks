@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: dw-with-mordern-data-stacks
+    schema: bronze
+    description: Desenvolvendo um DW com BigQuery utilizando Modern Data Stacks
+    freshness:
+      warn_after:
+        count: 24
+        period: hour
+      error_after:
+        count: 48
+        period: hour
+    tables:
+      - name: bronze_agenda_medica
+        description: Tabela fato que contêm todos os agendamentos médicos
+      - name: bronze_cadastro_cliente
+        description: Tabela dimensão que possui o cadastro de cada paciente atendido
+      - name: bronze_cadastro_profissional
+        description: Tabela dimensão que possui o cadastro de todos os profissionais habilitados para atendimentos.
+      - name: bronze_scraping_empregos_jgua
+        description: Web Scraping com oportunidades de emprego anunciadas no portal da prefeitura de jaraguá do sul.

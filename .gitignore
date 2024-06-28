@@ -8,6 +8,17 @@ __pycache__/
 *$py.class
 data/
 
+#dbt core
+profiles.yml
+profiles.yaml
+
+# my files
+keyfile.json
+teste.py
+.ipynb
+TestePySpark.py
+read_appsheet.py
+
 # C extensions
 *.so
 

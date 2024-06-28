@@ -1,0 +1,23 @@
+models:
+  - name: cadastro_medicos
+    # required
+    config:
+      contract:
+        enforced: true
+
+    description: tabela de cadastro com médicos da empresa.
+    constraints:
+      - type: primary_key
+        columns: [id]
+    columns:
+      - name: id
+        data_type: int
+        description: Chave única para cada agendamento
+        data_tests:
+          - not_null
+      - name: nome
+        data_type: string
+      - name: area_de_atuacao
+        data_type: string
+      - name: criado_em
+        data_type: timestamp

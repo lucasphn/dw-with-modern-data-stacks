@@ -1,0 +1,45 @@
+models:
+  - name: empregos_jaragua
+    # required
+    config:
+      contract:
+        enforced: true
+
+    description: Web Scraping com oportunidades de emprego anunciadas no portal da prefeitura de jaraguá do sul.
+
+    constraints:
+      - type: primary_key
+        columns: [id]
+
+    columns:
+      - name: id
+        data_type: int
+        description: Chave única para cada vaga de emprego publicada
+        data_tests:
+          - not_null
+      - name: nome_da_vaga
+        data_type: string
+      - name: nome_da_empresa
+        data_type: string
+      - name: data_publicada
+        data_type: date
+      - name: numero_de_vagas
+        data_type: string
+      - name: quantidade_vagas
+        data_type: int
+      - name: senioridade
+        data_type: string
+      - name: formato_disponibilidade
+        data_type: string
+      - name: area_de_atuacao
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: regiao
+        data_type: string
+      - name: logo_da_empresa
+        data_type: string
+      - name: saber_mais
+        data_type: string
+      - name: created_at
+        data_type: timestamp

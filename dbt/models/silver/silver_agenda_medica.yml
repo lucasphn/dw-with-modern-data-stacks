@@ -1,0 +1,8 @@
+models:
+  - name: silver_agenda_medica
+    description: Tabela fato que contêm todos os agendamentos médicos
+    columns:
+      - name: id
+        description: Chave única para cada agendamento
+        data_tests:
+          - not_null

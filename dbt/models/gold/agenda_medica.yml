@@ -1,0 +1,10 @@
+models:
+  - name: agenda_medica
+    description: Tabela fato que contém todos os agendamentos médicos
+    columns:
+      - name: id
+        description: Chave única para cada agendamento
+        data_tests:
+          - not_null
+      - name: data_do_agendamento
+        description: Data do agendamento

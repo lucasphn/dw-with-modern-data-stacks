@@ -1,0 +1,8 @@
+models:
+  - name: silver_cadastro_medico
+    description: tabela dimensão que possui os dados de cada médico cadastrado
+    columns:
+      - name: id
+        description: Chave única para cada profissional
+        data_tests:
+          - not_null

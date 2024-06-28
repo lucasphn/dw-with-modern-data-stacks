@@ -1,0 +1,21 @@
+models:
+  - name: silver_empregos_jaragua
+    description: Web Scraping com oportunidades de emprego anunciadas no portal da prefeitura de jaraguá do sul.
+    columns:
+      - name: id
+        description: Chave única para cada vaga de emprego publicada
+        data_tests:
+          - not_null
+      - name: Nome da Vaga
+      - name: Nome da Empresa
+      - name: Data Publicada
+      - name: Número de Vagas
+      - name: Quantidade de Vagas
+      - name: Senioridade
+      - name: Formato de Disponibilidade
+      - name: Área de Atuação
+      - name: Cidade
+      - name: Região
+      - name: Logo da Empresa
+      - name: Saber Mais
+      - name: Created At

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  airbyte:
+    build: ./airbyte
+    ports:
+      - "8000:8000"  # exemplo de mapeamento de porta, ajuste conforme necessário
+    volumes:
+      - ./airbyte  # ajuste o caminho conforme necessário
+    command: ./run-ab-platform.sh

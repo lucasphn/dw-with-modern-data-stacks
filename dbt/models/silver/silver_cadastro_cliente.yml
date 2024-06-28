@@ -1,0 +1,8 @@
+models:
+  - name: silver_cadastro_cliente
+    description: tabela dimensão que possui os dados de cliente
+    columns:
+      - name: id
+        description: Chave única para cada cliente
+        data_tests:
+          - not_null

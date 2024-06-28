@@ -1,0 +1,38 @@
+models:
+  - name: cadastro_cliente
+    # required
+    config:
+      contract:
+        enforced: true
+    description: tabela de cadastro com todos os pacientes.
+    constraints:
+      - type: primary_key
+        columns: [id]
+    columns:
+      - name: id
+        data_type: int
+        description: Chave única para cada cliente
+        data_tests:
+          - not_null
+      - name: nome
+        data_type: string
+      - name: data_nascimento
+        data_type: date
+      - name: cpf
+        data_type: string
+      - name: telefone
+        data_type: string
+      - name: email
+        data_type: string
+      - name: rua
+        data_type: string
+      - name: numero
+        data_type: string
+      - name: bairro
+        data_type: string
+      - name: cidade
+        data_type: string
+      - name: uf
+        data_type: string
+      - name: criado_em
+        data_type: timestamp
