@@ -18,6 +18,9 @@ teste.py
 .ipynb
 TestePySpark.py
 read_appsheet.py
+read_appsheet.ipynb
+TestePySpark.ipynb
+
 
 # C extensions
 *.so
